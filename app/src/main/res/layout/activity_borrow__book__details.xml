@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+    tools:context=".Borrow_Book_Details">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardUseCompatPadding="true"
+        android:elevation="4dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Borrow Details"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="88dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+
+
+                <EditText
+                    android:id="@+id/etborrowbookname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book ID"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+
+                <EditText
+                    android:id="@+id/etborrwbookid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Book Name"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <EditText
+                    android:id="@+id/etreturndate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Return Date"
+                    android:inputType="date" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/btnBorrow"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:padding="15dp"
+                    android:text="Borrow"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

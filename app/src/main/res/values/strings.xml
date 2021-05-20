@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Public_Library</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="pref_login_status">com.example.preference_login_status</string>
+    <string name="UsersList">Users List</string>
+    <string name="borrowBooks">Borrowed Books List</string>
+</resources>
